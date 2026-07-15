@@ -4,7 +4,13 @@ document.addEventListener('DOMContentLoaded', () => {
   fetch('/api/logs')
     .then(res => res.json())
     .then(logs => {
-      container.innerHTML = logs.map(log => {
+
+      // 1. Sort the logs array by date descending (Newest first)
+      const sortedLogs = logs.sort((a, b) => {
+        return new Date(b.date) - new Date(a.date);
+      });
+
+      container.innerHTML = sortedLogs.map(log => {
         // strip '.txt' from the filename
         const slug = log.filename.replace(/\.txt$/, '');
         
