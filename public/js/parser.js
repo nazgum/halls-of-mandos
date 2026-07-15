@@ -92,6 +92,18 @@ export function parseLog(text) {
     else if (cleanLine.match(/.* seems to be blinded!/)) {
         timeline.push({ icon: '🙈', text: cleanLine.trim(), lineIndex: targetLineIndex });
     }
+    else if (cleanLine.match(/as you place a .* in its back/)) {
+        timeline.push({ icon: '🗡️', text: cleanLine.trim(), lineIndex: targetLineIndex });
+        formattedLine = `<span class="spell-damage">${formattedLine}</span>`;
+    }
+    else if (cleanLine.match(/The lightning bolt hits .* with full impact/)) {
+        timeline.push({ icon: '⚡', text: cleanLine.trim(), lineIndex: targetLineIndex });
+        formattedLine = `<span class="spell-damage">${formattedLine}</span>`;
+    }
+    else if (cleanLine.match(/blows into the horn/)) {
+        timeline.push({ icon: '🎺', text: cleanLine.trim(), lineIndex: targetLineIndex });
+        formattedLine = `<span class="spell">${formattedLine}</span>`;
+    }
 
     formattedLine = formattedLine.replace(/(fighting )([a-zA-Z\s]+)(?=\.)/g, (match, p1, targetName) => {
         return p1 + `<span class="mobile">${targetName.trim()}</span>`;
