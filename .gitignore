@@ -10,6 +10,5 @@ node_modules/
 *.log
 Thumbs.db
 
-# Your specific log folder
-# If you don't want to push your actual game logs, uncomment the line below:
+logs.json
 logs/
