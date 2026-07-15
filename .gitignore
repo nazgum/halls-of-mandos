@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules/
+
+# Environment variables
+.env
+.env.local
+
+# System files
+.DS_Store
+*.log
+Thumbs.db
+
+# Your specific log folder
+# If you don't want to push your actual game logs, uncomment the line below:
+logs/

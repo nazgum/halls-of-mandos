@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../partials/head') %>
+    <link rel="stylesheet" href="/css/show.css">
+    <title>MUME Log Viewer</title>
+  </head>
+<body>
+  <div class="container">
+    <div class="header-dashboard">
+      <a href="/" style="color: var(--blue); text-decoration: none;">← Back</a>
+      <h2 id="log-title"></h2>
+      <div class="user-profile">
+        <div id="user-meta" class="user-meta">
+          <span>By <strong class="uploader-name">Nazgum</strong></span> on  
+          <span id="metaDate">...</span>
+        </div>
+      </div>
+    </div>
+      
+    <div class="main-layout">
+      <div class="log-column" id="logContainer"></div>
+
+      <div class="sidebar-column">
+        <div class="widget">
+          <div class="timeline-header">
+            <h3>Timeline</h3>
+            <div class="controls">
+              <div class="speed-group">
+                <button class="speed-btn" onclick="setSpeed(this, 600)">.5x</button>
+                <button class="speed-btn" onclick="setSpeed(this, 400)">.8x</button>
+                <button class="speed-btn active" onclick="setSpeed(this, 300)">1x</button>
+                <button class="speed-btn" onclick="setSpeed(this, 200)">2x</button>
+                <button class="speed-btn" onclick="setSpeed(this, 100)">3x</button>
+              </div>
+              <div class="speed-group">
+                <button id="playBtn" onclick="togglePlay()" class="play-btn">Auto-Read</button>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-list" id="timelineContainer"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/js/viewer.js"></script>
+</body>
+</html>
