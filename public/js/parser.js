@@ -97,7 +97,7 @@ export function parseLog(text) {
         formattedLine = `<span class="spell-damage">${formattedLine}</span>`;
     }
     else if (cleanLine.match(/resulting in some strange noises/)) {
-        timeline.push({ icon: '🗡️', text: cleanLine.trim(), lineIndex: targetLineIndex });
+        timeline.push({ icon: '🗡️', text: cleanLine.split(',')[0].trim(), lineIndex: targetLineIndex });
         formattedLine = `<span class="spell-damage">${formattedLine}</span>`;
     }
     else if (cleanLine.match(/The lightning bolt hits .* with full impact/)) {
