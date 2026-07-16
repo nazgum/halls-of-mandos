@@ -102,7 +102,16 @@ export function parseLog(text) {
     }
     else if (cleanLine.match(/blows into the horn/)) {
         timeline.push({ icon: '🎺', text: cleanLine.trim(), lineIndex: targetLineIndex });
-        formattedLine = `<span class="spell">${formattedLine}</span>`;
+        formattedLine = `<span class="gear-spellsave">${formattedLine}</span>`;
+    }
+
+    else if (cleanLine.match(/You recite a .* scroll which dissolves/)) {
+        timeline.push({ icon: '📜', text: cleanLine.trim(), lineIndex: targetLineIndex });
+        formattedLine = `<span class="gear-spellsave">${formattedLine}</span>`;
+    }
+    else if (cleanLine.match(/turns numb as the poison speeds to his brain/)) {
+        timeline.push({ icon: '🧪', text: cleanLine.trim(), lineIndex: targetLineIndex });
+        formattedLine = `<span class="gear-poison">${formattedLine}</span>`;
     }
 
     formattedLine = formattedLine.replace(/(fighting )([a-zA-Z\s]+)(?=\.)/g, (match, p1, targetName) => {
@@ -143,7 +152,7 @@ export function parseLog(text) {
   const totalLines = parsedLines.length;
 
   if (totalLines > 0) {
-      timeline.unshift({ icon: '📜', text: 'Beginning of Log', lineIndex: 0 });
+      timeline.unshift({ icon: '🚩', text: 'Beginning of Log', lineIndex: 0 });
       timeline.push({ icon: '🏁', text: 'End of Log', lineIndex: totalLines - 1 });
   }
 
