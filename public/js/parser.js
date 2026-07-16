@@ -108,7 +108,6 @@ export function parseLog(text) {
         timeline.push({ icon: '🎺', text: cleanLine.trim(), lineIndex: targetLineIndex });
         formattedLine = `<span class="gear-spellsave">${formattedLine}</span>`;
     }
-
     else if (cleanLine.match(/You recite a .* scroll which dissolves/)) {
         timeline.push({ icon: '📜', text: cleanLine.trim(), lineIndex: targetLineIndex });
         formattedLine = `<span class="gear-spellsave">${formattedLine}</span>`;
@@ -119,7 +118,6 @@ export function parseLog(text) {
     }
     else if (cleanLine.match(/In the corpse of \*/)) {
         timeline.push({ icon: '🪎', text: cleanLine.trim(), lineIndex: targetLineIndex });
-        formattedLine = `<span class="gear-artifact">${formattedLine}</span>`;
     }
 
 
