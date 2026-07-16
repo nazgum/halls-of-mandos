@@ -117,6 +117,11 @@ export function parseLog(text) {
         timeline.push({ icon: '🧪', text: cleanLine.trim(), lineIndex: targetLineIndex });
         formattedLine = `<span class="gear-poison">${formattedLine}</span>`;
     }
+    else if (cleanLine.match(/In the corpse of \*/)) {
+        timeline.push({ icon: '🪎', text: cleanLine.trim(), lineIndex: targetLineIndex });
+        formattedLine = `<span class="gear-artifact">${formattedLine}</span>`;
+    }
+
 
     formattedLine = formattedLine.replace(/(fighting )([a-zA-Z\s]+)(?=\.)/g, (match, p1, targetName) => {
         return p1 + `<span class="mobile">${targetName.trim()}</span>`;
