@@ -145,7 +145,7 @@ export function parseLog(text) {
     }
 
     // color room name green
-    if (/^[A-Z][a-zA-Z\s]+$/.test(rawLine.trim()) && rawLine.trim().length < 30 && !/is |are |standing |here/i.test(rawLine)) {
+    if (/^[A-Z][a-zA-Z\s]+$/.test(rawLine.trim()) && rawLine.trim().length < 40 && !/is |are |standing |here/i.test(rawLine)) {
         formattedLine = `<span class="room">${formattedLine}</span>`;
     }
 
