@@ -11,7 +11,7 @@
   --magenta: #8996a8;
   --comment: #8d8687;
   
-  --dim: color-mix(in srgb, var(--fg), transparent 30%);
+  --dim: color-mix(in srgb, var(--fg), transparent 20%);
   --box-shadow: rgba(0,0,0,0.4);
   
   --widget-border: rgba(65, 50, 63, 0.3);
