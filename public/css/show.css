@@ -104,8 +104,8 @@ body {
   max-width: 400px; /* Adjust this based on how much room you want to give the title */
 }
 
-.log-title { display: none; }
-.home-seperator { display: none; }
+#log-title { display: none; }
+#home-seperator { display: none; }
 .user-profile { display: flex; align-items: center; gap: 12px; }
 .user-meta { font-size: 0.85em; color: var(--dim); font-family: sans-serif; display: none; }
 .user-meta strong { color: var(--fg); }
