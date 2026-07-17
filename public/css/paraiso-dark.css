@@ -1,5 +1,4 @@
 .theme-paraiso-dark {
-  /* Swapped: Card is now darker than the page background */
   --bg: #41323f; 
   --card-bg: #2f1e2e; 
   
@@ -15,11 +14,9 @@
   --dim: color-mix(in srgb, var(--fg), transparent 30%);
   --box-shadow: rgba(0,0,0,0.4);
   
-  /* Borders now use the page bg color to blend */
   --widget-border: rgba(65, 50, 63, 0.3);
   --btn-border: rgba(65, 50, 63, 0.3);
   
-  /* Timeline now uses the new darker card color as base */
   --timeline-bg: rgba(65, 50, 63, 0.2);
   --timeline-hover: rgba(6, 182, 239, 0.15);
   
