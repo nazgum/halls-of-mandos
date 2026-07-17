@@ -8,10 +8,11 @@
 <body>
   <div class="container">
     <div class="header-dashboard">
-      <div class="header-left">
-        <a href="/" class="back-link">← Back</a>
-        <h2 id="log-title"></h2>
-      </div>
+      <nav aria-label="Breadcrumb" class="header-left breadcrumbs">
+        <a href="/" class="breadcrumb-link">Home</a>
+        <span id="home-seperator" class="breadcrumb-separator">/</span>
+        <span id="log-title" class="breadcrumb-current"></span>
+      </nav>
       
       <div class="header-right">
         <div id="user-meta" class="user-meta">

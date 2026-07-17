@@ -43,14 +43,65 @@ body {
   gap: 1.5rem;
 }
 
-.back-link {
-  color: var(--blue);
-  text-decoration: none;
-  font-weight: bold;
+.breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  font-size: 1.1rem; /* This sets the exact size for the whole line */
 }
 
-.back-link:hover {
-  text-decoration: underline;
+.breadcrumb-link,
+.breadcrumb-link:visited {
+  color: var(--dim);
+  text-decoration: none;
+  font-weight: normal;
+}
+
+.breadcrumb-link:hover {
+  color: var(--blue);
+  text-decoration: underline; /* A simple underline looks best without transitions */
+}
+
+.breadcrumb-separator {
+  color: var(--comment);
+  font-weight: normal;
+  user-select: none; /* Stops users from accidentally highlighting the slash */
+}
+
+.breadcrumb-current {
+  margin: 0;
+  padding: 0;
+  color: var(--fg);
+  font-weight: bold;
+  font-size: inherit; /* Forces the h2 to exactly match the 1.1rem container size */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px; /* Keeps really long log names from breaking your layout */
+}
+
+/* Make the home icon sit perfectly inline with the text */
+.home-icon {
+  margin-bottom: 2px;
+}
+
+.breadcrumb-separator {
+  color: var(--comment); /* Uses the theme's comment color so it stays subtle */
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-current {
+  margin: 0;
+  font-size: 1.1rem; /* Slightly larger to indicate it's the current page title */
+  color: var(--fg);
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Prevents super long log names from breaking the header layout */
+  max-width: 400px; /* Adjust this based on how much room you want to give the title */
 }
 
 .log-title { display: none; }

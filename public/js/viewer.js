@@ -9,6 +9,7 @@ const filename = logIndex !== -1 ? `${pathParts[logIndex + 1]}.txt` : null;
 const humanizeTitle = (name) => name.replace(/\.[^/.]+$/, "").split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
 
 document.getElementById('log-title').style.display = 'none';
+document.getElementById('home-seperator').style.display = 'none';
 
 if (!filename) {
   document.getElementById('log-title').innerText = "No File Selected";
@@ -40,12 +41,17 @@ if (!filename) {
 
       const userMeta = document.getElementById('user-meta');
       if (userMeta) {
-          userMeta.style.display = 'block'; // Or 'flex', depending on your layout
+          userMeta.style.display = 'block';
       }
 
       const logTitle = document.getElementById('log-title');
       if (logTitle) {
-          logTitle.style.display = 'flex';
+          logTitle.style.display = 'inline';
+      }
+
+      const homeSep = document.getElementById('home-seperator');
+      if (homeSep) {
+          homeSep.style.display = 'inline';
       }
 
       // sync state for playback.js
