@@ -7,7 +7,7 @@
   --yellow: #df8e1d;
   --cyan: #179299;
   --magenta: #8839ef;
-  --dim: color-mix(in srgb, var(--fg), transparent 20%);
+  --dim: color-mix(in srgb, var(--fg), transparent 15%);
   --card-bg: #e6e9ef;
   --comment: #9ca0b0;
 
