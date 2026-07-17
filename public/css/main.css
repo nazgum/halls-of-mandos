@@ -1,0 +1,45 @@
+* { box-sizing: border-box; }
+
+/* Add to theme.css */
+:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+/* Also remove default outlines on your play/speed buttons so they don't clash */
+button:focus { outline: none; }
+
+body { 
+  background-color: var(--bg); 
+  color: var(--fg); 
+}
+
+.enemy { color: var(--red); font-weight: bold; }
+.room { color: var(--green); font-weight: bold; }
+.mobile { font-weight: bold; color: var(--fg); }
+.tell { color: var(--blue); }
+.narrate { color: var(--yellow); }
+.prompt { color: var(--dim); }
+.spell { color: var(--magenta); }
+.sanctuary { color: var(--sanctuary); }
+.gear-legendary { color: var(--gear-legendary); }
+.gear-artifact { color: var(--gear-artifact); }
+.gear-focus { color: var(--gear-focus); }
+.gear-spellsave { color: var(--gear-spellsave); }
+.gear-weapon { color: var(--gear-weapon); }
+.gear-purple { color: var(--magenta); }
+.gear-blue { color: var(--blue); }
+.gear-usable { color: var(--gear-usable); }
+.gear-poison { color: var(--gear-poison); }
+.spell-damage { color: color-mix(in srgb, var(--magenta), red 20%); }
+.tones-red { color: color-mix(in srgb, var(--red), black 10%); }
+.tones-white { color: var(--tones-white) }
+.comment { color: var(--comment) font-style: italic; }
+.sunny-exit { color: var(--yellow); }
+
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: rgba(36, 40, 59, 0.5); border-radius: 4px; }
+::-webkit-scrollbar-thumb { background: var(--dim); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--blue); }
+
+

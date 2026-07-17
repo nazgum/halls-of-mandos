@@ -1,0 +1,43 @@
+.theme-catppuccin-latte {
+  /* Main Palette */
+  --bg: #eff1f5;
+  --fg: #4c4f69;
+  --red: #d20f39;
+  --green: #40a02b;
+  --blue: #1e66f5;
+  --yellow: #df8e1d;
+  --cyan: #179299;
+  --magenta: #8839ef;
+  --dim: color-mix(in srgb, var(--fg), transparent 20%);
+  --card-bg: #e6e9ef;
+  --comment: #9ca0b0;
+
+  /* UI & Layout */
+  --box-shadow: rgba(0, 0, 0, 0.05);
+  --widget-border: rgba(172, 176, 190, 0.3);
+  --btn-border: rgba(172, 176, 190, 0.3);
+  
+  /* Timeline & Interactions */
+  --timeline-bg: rgba(239, 241, 245, 0.5);
+  --timeline-hover: rgba(30, 102, 245, 0.1);
+  --speed-group-bg: rgba(230, 233, 239, 0.6);
+  --speed-group-border: rgba(172, 176, 190, 0.3);
+  
+  /* Log Viewer */
+  --log-column-border: rgba(172, 176, 190, 0.3);
+  --log-item-hover: rgba(30, 102, 245, 0.08);
+  --reader-highlight-bg: rgba(30, 102, 245, 0.08);
+  --reader-highlight-anim: rgba(30, 102, 245, 0.3);
+
+  /* Gear & Highlights */
+  --sanctuary: #179299;
+  --gear-legendary: #8839ef;
+  --gear-artifact: #df8e1d;
+  --gear-focus: #4c4f69;
+  --gear-spellsave: #fe640b;
+  --gear-weapon: #1e66f5;
+  --gear-usable: #ea76cb;
+  --gear-poison: #40a02b;
+
+  --tones-white: #4c4f69;
+}

@@ -1,0 +1,44 @@
+.theme-paraiso-dark {
+  /* Swapped: Card is now darker than the page background */
+  --bg: #41323f; 
+  --card-bg: #2f1e2e; 
+  
+  --fg: #a39e9b;
+  --red: #ef6155;
+  --green: #48b685;
+  --blue: #06b6ef;
+  --yellow: #fec418;
+  --cyan: #5bc4bf;
+  --magenta: #8996a8;
+  --comment: #8d8687;
+  
+  --dim: color-mix(in srgb, var(--fg), transparent 30%);
+  --box-shadow: rgba(0,0,0,0.4);
+  
+  /* Borders now use the page bg color to blend */
+  --widget-border: rgba(65, 50, 63, 0.3);
+  --btn-border: rgba(65, 50, 63, 0.3);
+  
+  /* Timeline now uses the new darker card color as base */
+  --timeline-bg: rgba(65, 50, 63, 0.2);
+  --timeline-hover: rgba(6, 182, 239, 0.15);
+  
+  --speed-group-bg: rgba(47, 30, 46, 0.6);
+  --speed-group-border: rgba(65, 50, 63, 0.3);
+  
+  --log-column-border: rgba(65, 50, 63, 0.3);
+  --log-item-hover: rgba(6, 182, 239, 0.08);
+  
+  --reader-highlight-bg: rgba(6, 182, 239, 0.08);
+  --reader-highlight-anim: rgba(6, 182, 239, 0.3);
+
+  --sanctuary: #5bc4bf;
+  --gear-legendary: #8996a8;
+  --gear-artifact: #fec418;
+  --gear-focus: #a39e9b;
+  --gear-spellsave: #f99b15;
+  --gear-weapon: #06b6ef;
+  --gear-usable: #ef6155;
+  --gear-poison: #48b685;
+  --tones-white: #ffffff;
+}

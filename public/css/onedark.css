@@ -1,0 +1,37 @@
+.theme-onedark {
+  --bg: #282c34;
+  --fg: #abb2bf;
+  --red: #e06c75;
+  --green: #98c379;
+  --blue: #61afef;
+  --yellow: #e5c07b;
+  --cyan: #56b6c2;
+  --magenta: #c678dd;
+  --dim: color-mix(in srgb, var(--fg), transparent 40%);
+  --card-bg: #21252b;
+  --comment: #5c6370;
+
+  --box-shadow: rgba(0,0,0,0.3);
+  --widget-border: rgba(171, 178, 191, 0.15);
+  --btn-border: rgba(171, 178, 191, 0.15);
+  
+  --timeline-bg: rgba(40, 44, 52, 0.5);
+  --timeline-hover: rgba(97, 175, 239, 0.15);
+  --speed-group-bg: rgba(33, 37, 43, 0.6);
+  --speed-group-border: rgba(171, 178, 191, 0.15);
+  
+  --log-column-border: rgba(171, 178, 191, 0.15);
+  --log-item-hover: rgba(97, 175, 239, 0.08);
+  --reader-highlight-bg: rgba(97, 175, 239, 0.08);
+  --reader-highlight-anim: rgba(97, 175, 239, 0.3);
+
+  --sanctuary: #56b6c2;
+  --gear-legendary: #c678dd;
+  --gear-artifact: #e5c07b;
+  --gear-focus: #abb2bf;
+  --gear-spellsave: #d19a66;
+  --gear-weapon: #61afef;
+  --gear-usable: #e06c75;
+  --gear-poison: #98c379;
+  --tones-white: #ffffff;
+}

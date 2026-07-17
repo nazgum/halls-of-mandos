@@ -1,0 +1,35 @@
+.theme-monokai-pro {
+  --bg: #2d2a2e;
+  --fg: #fcfcfa;
+  --red: #ff6188;
+  --green: #a9dc76;
+  --blue: #78dce8;
+  --yellow: #ffd866;
+  --cyan: #78dce8;
+  --magenta: #ab9df2;
+  --card-bg: #3d3a3f;
+  --comment: #727072;
+  
+  --dim: color-mix(in srgb, var(--fg), transparent 30%);
+  --box-shadow: rgba(0,0,0,0.5);
+  --widget-border: rgba(252, 252, 250, 0.1);
+  --btn-border: rgba(252, 252, 250, 0.1);
+  --timeline-bg: rgba(45, 42, 46, 0.5);
+  --timeline-hover: rgba(120, 220, 232, 0.15);
+  --speed-group-bg: rgba(61, 58, 63, 0.6);
+  --speed-group-border: rgba(252, 252, 250, 0.1);
+  --log-column-border: rgba(252, 252, 250, 0.1);
+  --log-item-hover: rgba(120, 220, 232, 0.08);
+  --reader-highlight-bg: rgba(120, 220, 232, 0.08);
+  --reader-highlight-anim: rgba(120, 220, 232, 0.3);
+
+  --sanctuary: #78dce8;
+  --gear-legendary: #ab9df2;
+  --gear-artifact: #ffd866;
+  --gear-focus: #fcfcfa;
+  --gear-spellsave: #fc9867;
+  --gear-weapon: #78dce8;
+  --gear-usable: #ff6188;
+  --gear-poison: #a9dc76;
+  --tones-white: #ffffff;
+}

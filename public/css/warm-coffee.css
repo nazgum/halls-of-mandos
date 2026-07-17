@@ -1,0 +1,37 @@
+.theme-warm-coffee {
+  --bg: #dfd8ce;
+  --card-bg: #d2cabb;
+  --fg: #3e3325;
+  --red: #a8423f;
+  --green: #4d7a6a;
+  --blue: #406a82;
+  --yellow: #997400;
+  --cyan: #3d6a6b;
+  --magenta: #855361;
+  --comment: #756a5c;
+  --dim: color-mix(in srgb, var(--fg), transparent 25%);
+  
+  --box-shadow: rgba(0, 0, 0, 0.15);
+  --widget-border: #b5ada2;
+  --btn-border: #b5ada2;
+  
+  --timeline-bg: color-mix(in srgb, var(--card-bg), var(--fg) 10%);
+  --timeline-hover: rgba(64, 106, 130, 0.15);
+  --speed-group-bg: #b5ada2;
+  --speed-group-border: #a8a095;
+  
+  --log-column-border: #b5ada2;
+  --log-item-hover: rgba(64, 106, 130, 0.1);
+  --reader-highlight-bg: rgba(64, 106, 130, 0.1);
+  --reader-highlight-anim: rgba(64, 106, 130, 0.4);
+
+  --sanctuary: #3d6a6b;
+  --gear-legendary: #855361;
+  --gear-artifact: #997400;
+  --gear-focus: #3e3325;
+  --gear-spellsave: #a8423f;
+  --gear-weapon: #406a82;
+  --gear-usable: #a8423f;
+  --gear-poison: #4d7a6a;
+  --tones-white: #251e16;
+}

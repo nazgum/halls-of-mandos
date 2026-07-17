@@ -1,4 +1,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/css/reset.css">
-<link rel="stylesheet" href="/css/theme.css">
+<link rel="stylesheet" href="/css/catppuccin-latte.css">
+<link rel="stylesheet" href="/css/monokai-pro.css">
+<link rel="stylesheet" href="/css/onedark.css">
+<link rel="stylesheet" href="/css/paraiso-dark.css">
+<link rel="stylesheet" href="/css/tokyo-night-storm.css">
+<link rel="stylesheet" href="/css/warm-coffee.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/theme-switcher.css">
+
+<script>
+  // Runs immediately while HTML parses to prevent FOUC (Flash of Unstyled Content)
+  const savedTheme = localStorage.getItem('mandos-theme') || 'tokyo-night-storm';
+  document.documentElement.className = `theme-${savedTheme}`; 
+  // Note: if you apply the class to <body> instead of <html>, change the above line to:
+  // document.write(`<body class="theme-${savedTheme}">`); 
+</script>

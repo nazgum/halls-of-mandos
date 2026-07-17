@@ -1,0 +1,43 @@
+.theme-tokyo-night-storm {
+  --bg: #24283b;
+  --fg: #c0caf5;
+  --red: #f7768e;
+  --green: #9ece6a;
+  --blue: #7aa2f7;
+  --yellow: #e0af68;
+  --cyan: #7dcfff;
+  --magenta: #bb9af7;
+  /*--dim: #6c77a8;*/
+  --dim: #808bbd;
+  --card-bg: #1f2335;
+  --comment: #7f849c;
+
+  --box-shadow: rgba(0,0,0,0.3);
+
+  --widget-border: rgba(86, 95, 137, 0.3);
+
+  --btn-border: rgba(86, 95, 137, 0.3);
+  --timeline-bg: rgba(36, 40, 59, 0.5);
+  --timeline-hover: rgba(122, 162, 247, 0.15);
+
+  --speed-group-bg: rgba(36, 40, 59, 0.6);
+  --speed-group-border: rgba(86, 95, 137, 0.5);
+
+  --log-column-border: rgba(86, 95, 137, 0.5);
+  --log-item-hover: rgba(122, 162, 247, 0.08);
+
+  --reader-highlight-bg: rgba(192, 202, 245, 0.08);
+  --reader-highlight-anim: rgba(122, 162, 247, 0.4);
+
+  --sanctuary: #2ac3de;
+  --gear-legendary: #9B6CF3;
+  --gear-artifact: #E5C890;
+  --gear-focus: #cfc9c2;
+  --gear-spellsave: #fca878;
+  --gear-weapon: #59A0EB;
+  --gear-usable: #E46EBF;
+  --gear-poison: #8AC364;
+
+  --tones-white: #eee;
+}
+
