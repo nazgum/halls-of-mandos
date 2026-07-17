@@ -6,17 +6,9 @@ const pathParts = window.location.pathname.split('/');
 const logIndex = pathParts.indexOf('log');
 const filename = logIndex !== -1 ? `${pathParts[logIndex + 1]}.txt` : null;
 
-const humanizeTitle = (name) => name.replace(/\.[^/.]+$/, "").split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
-
-document.getElementById('log-title').style.display = 'none';
-document.getElementById('home-seperator').style.display = 'none';
-
 if (!filename) {
-  document.getElementById('log-title').innerText = "No File Selected";
-  document.getElementById('logContainer').innerHTML = "Please select a log from the <a href='/'>index page</a>.";
+  document.getElementById('logContainer').innerHTML = "Log not found in mandos, choose one from <a href='/'>home</a>.";
 } else {
-  document.getElementById('log-title').innerText = humanizeTitle(filename);
-  document.title = `${humanizeTitle(filename)} - MUME Log Viewer`;
   document.getElementById('logContainer').innerHTML = '<div class="loading">Loading log...</div>';
 
   // update view count

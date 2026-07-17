@@ -114,7 +114,15 @@ client.on('interactionCreate', async interaction => {
         const text = await response.text();
         await fs.writeFile(filePath, text);
 
-        // safely update logs.json
+        const urlSlug = fileName.replace('.txt', '');
+        const viewUrl = `${URL}/log/${urlSlug}`;
+        
+        const excitingMessage = `## ⚔️ The Halls of Mandos have expanded! ⚔️\n\n**${title}** - by **${uploader}**.\n${viewUrl}`;
+
+        // grab the message for the discord url
+        const postedMessage = await interaction.editReply(excitingMessage);
+
+        // update logs.json with the new log
         const jsonPath = path.join(process.cwd(), 'logs.json');
         let logsData = [];
         
@@ -122,26 +130,19 @@ client.on('interactionCreate', async interaction => {
             const fileData = await fs.readFile(jsonPath, 'utf-8');
             logsData = JSON.parse(fileData);
         } catch (err) {
-            // file doesn't exist yet, start fresh and create the json
+            // file doesn't exist yet, start fresh
         }
 
         const newEntry = {
             filename: fileName,
             title: title,
             author: uploader,
-            views: 0
+            views: 0,
+            discord_url: postedMessage.url
         };
         
         logsData.push(newEntry);
         await fs.writeFile(jsonPath, JSON.stringify(logsData, null, 4));
-
-        // generate url and post the message
-        const urlSlug = fileName.replace('.txt', '');
-        const viewUrl = `${URL}/log/${urlSlug}`;
-
-        const excitingMessage = `## ⚔️ The Halls of Mandos have expanded! ⚔️\n\n**${title}** - by **${uploader}**.\n${viewUrl}`;
-
-        await interaction.editReply(excitingMessage);
 
     } catch (err) {
         console.error("Error processing log:", err);

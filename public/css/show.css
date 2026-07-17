@@ -82,11 +82,6 @@ body {
   max-width: 400px; /* Keeps really long log names from breaking your layout */
 }
 
-/* Make the home icon sit perfectly inline with the text */
-.home-icon {
-  margin-bottom: 2px;
-}
-
 .breadcrumb-separator {
   color: var(--comment); /* Uses the theme's comment color so it stays subtle */
   display: flex;
@@ -111,6 +106,8 @@ body {
 .user-meta strong { color: var(--fg); }
 .uploader-name { color: var(--yellow) !important; font-weight: bold; }
 
+#discord-link, #discord-seperator { display: none; }
+
 .main-layout {
   display: grid;
   grid-template-columns: 1fr 370px;
@@ -128,6 +125,7 @@ body {
   letter-spacing: 0.3px;
   font-size: 0.95em;
   white-space: pre-wrap;
+  min-height: 100vh;
 }
 
 .log-line {
