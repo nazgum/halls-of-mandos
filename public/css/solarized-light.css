@@ -1,6 +1,6 @@
 .theme-solarized-light {
   --bg: #fdf6e3;
-  --fg: #657b83;
+  --fg: #4a5b60;
   --red: #dc322f;
   --green: #859900;
   --blue: #268bd2;
@@ -11,16 +11,16 @@
   --card-bg: #eee8d5;
   --comment: #93a1a1;
 
-  --box-shadow: rgba(0, 0, 0, 0.06);
-  --widget-border: rgba(147, 161, 161, 0.3);
-  --btn-border: rgba(147, 161, 161, 0.3);
+  --box-shadow: rgba(0, 0, 0, 0.08);
+  --widget-border: rgba(147, 161, 161, 0.4);
+  --btn-border: rgba(147, 161, 161, 0.4);
   
-  --timeline-bg: rgba(238, 232, 213, 0.5);
-  --timeline-hover: rgba(38, 139, 210, 0.1);
-  --speed-group-bg: rgba(224, 218, 198, 0.6);
-  --speed-group-border: rgba(147, 161, 161, 0.3);
+  --timeline-bg: rgba(216, 210, 190, 0.7);
+  --timeline-hover: rgba(38, 139, 210, 0.15);
+  --speed-group-bg: rgba(200, 195, 175, 0.6);
+  --speed-group-border: rgba(147, 161, 161, 0.5);
   
-  --log-column-border: rgba(147, 161, 161, 0.3);
+  --log-column-border: rgba(147, 161, 161, 0.4);
   --log-item-hover: rgba(38, 139, 210, 0.08);
   --reader-highlight-bg: rgba(38, 139, 210, 0.12);
   --reader-highlight-anim: rgba(38, 139, 210, 0.3);
@@ -28,11 +28,11 @@
   --sanctuary: #2aa198;
   --gear-legendary: #d33682;
   --gear-artifact: #b58900;
-  --gear-focus: #657b83;
+  --gear-focus: #073642;
   --gear-spellsave: #cb4b16;
   --gear-weapon: #268bd2;
   --gear-usable: #6c71c4;
   --gear-poison: #859900;
 
-  --tones-white: #657b83;
+  --tones-white: #073642;
 }
