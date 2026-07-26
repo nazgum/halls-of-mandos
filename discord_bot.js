@@ -140,7 +140,12 @@ client.on('interactionCreate', async interaction => {
             views: 0,
             discord_url: postedMessage.url
         };
-        
+
+        // only keep the url if it belongs to official mume discord
+        if (!newEntry.discord_url.includes('/497457567392333824/')) {
+            delete newEntry.discord_url;
+        }
+
         logsData.push(newEntry);
         await fs.writeFile(jsonPath, JSON.stringify(logsData, null, 4));
 
