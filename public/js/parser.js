@@ -116,6 +116,10 @@ export function parseLog(text) {
         timeline.push({ icon: '🎺', text: cleanLine.trim(), lineIndex: targetLineIndex });
         formattedLine = `<span class="gear-spellsave">${formattedLine}</span>`;
     }
+    else if (cleanLine.match(/You feel revitalized as the dark power/)) {
+        timeline.push({ icon: '🖤', text: cleanLine.trim(), lineIndex: targetLineIndex });
+        formattedLine = `<span class="spell">${formattedLine}</span>`;
+    }
     else if (cleanLine.match(/You recite a .* scroll which dissolves/)) {
         timeline.push({ icon: '📜', text: cleanLine.trim(), lineIndex: targetLineIndex });
         formattedLine = `<span class="gear-spellsave">${formattedLine}</span>`;
