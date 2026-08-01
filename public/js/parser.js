@@ -120,7 +120,7 @@ export function parseLog(text) {
         timeline.push({ icon: '📜', text: cleanLine.trim(), lineIndex: targetLineIndex });
         formattedLine = `<span class="gear-spellsave">${formattedLine}</span>`;
     }
-    else if (cleanLine.match(/turns numb as the poison speeds to his brain/)) {
+    else if (cleanLine.match(/turns numb as the poison speeds/)) {
         timeline.push({ icon: '🧪', text: cleanLine.trim(), lineIndex: targetLineIndex });
         formattedLine = `<span class="gear-poison">${formattedLine}</span>`;
     }
