@@ -92,7 +92,7 @@ export function parseLog(text) {
     else if (cleanLine.match(/.* seems to be blinded!/)) {
         timeline.push({ icon: '🙈', text: cleanLine.trim(), lineIndex: targetLineIndex });
     }
-    else if (cleanLine.match(/as you place a .* in its back/)) {
+    else if (cleanLine.match(/makes a strange sound but is suddenly|as you place a .* in its back/)) {
         timeline.push({ icon: '🗡️', text: cleanLine.trim(), lineIndex: targetLineIndex });
         formattedLine = `<span class="spell-damage">${formattedLine}</span>`;
     }
