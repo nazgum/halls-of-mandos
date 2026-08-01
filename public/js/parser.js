@@ -100,9 +100,17 @@ export function parseLog(text) {
         timeline.push({ icon: '🗡️', text: cleanLine.split(',')[0].trim() + ".", lineIndex: targetLineIndex });
         formattedLine = `<span class="spell-damage">${formattedLine}</span>`;
     }
-    else if (cleanLine.match(/The lightning bolt hits .* with full impact/)) {
+    else if (cleanLine.match(/lightning bolt hits/)) {
         timeline.push({ icon: '⚡', text: cleanLine.trim(), lineIndex: targetLineIndex });
         formattedLine = `<span class="spell-damage">${formattedLine}</span>`;
+    }
+    else if (cleanLine.match(/magic missile hits/)) {
+        timeline.push({ icon: '☄️', text: cleanLine.trim(), lineIndex: targetLineIndex });
+        formattedLine = `<span class="spell-damage">${formattedLine}</span>`;
+    }
+    else if (cleanLine.match(/shimmering golden aura/)) {
+        timeline.push({ icon: '🛡️', text: cleanLine.trim(), lineIndex: targetLineIndex });
+        formattedLine = `<span class="gear-spellsave">${formattedLine}</span>`;
     }
     else if (cleanLine.match(/blows into the horn/)) {
         timeline.push({ icon: '🎺', text: cleanLine.trim(), lineIndex: targetLineIndex });
