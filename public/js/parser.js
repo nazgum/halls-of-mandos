@@ -74,7 +74,7 @@ export function parseLog(text) {
     else if (cleanLine.includes('makes the earth tremble and shiver')) {
         timeline.push({ icon: '🌋', text: cleanLine.trim(), lineIndex: targetLineIndex });
     }
-    else if (cleanLine.includes('is dead! R.I.P.') || cleanLine.includes('has drawn his last breath! R.I.P.')) {
+    else if (cleanLine.includes('is dead! R.I.P.') || cleanLine.includes('has drawn his last breath! R.I.P.') || cleanLine.includes('has drawn her last breath! R.I.P.')) {
         timeline.push({ icon: '💀', text: cleanLine.trim(), lineIndex: targetLineIndex });
     }
     else if (cleanLine.match(/You hear some clicking noises from|You hear a \*click\* in a lock|^\s*\*click\*\s*$/)) {
