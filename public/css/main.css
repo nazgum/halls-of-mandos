@@ -18,7 +18,6 @@ body {
 .enemy { font-weight: bold; color: var(--fg); }
 .room { color: var(--green); font-weight: bold; }
 /*.mobile { font-weight: bold; color: var(--fg); }*/
-.mobile { color: color-mix(in srgb, var(--fg), black 20%); }
 .tell { color: var(--blue); }
 .narrate { color: var(--yellow); }
 .prompt { color: var(--dim); }
